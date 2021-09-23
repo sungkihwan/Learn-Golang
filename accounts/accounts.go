@@ -42,6 +42,7 @@ func (a *Account) ChangeOwner(newOwner string) {
 	a.owner = newOwner
 }
 
+// 단순조회는 프록시 객체 사용해도 무방
 func (a Account) Owner() string {
 	return a.owner
 }
