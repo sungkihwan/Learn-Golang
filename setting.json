@@ -1,0 +1,55 @@
+{
+    "editor.fontSize": 14,
+    "editor.formatOnPaste": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.snippetSuggestions": "top",
+    "extensions.ignoreRecommendations": false,
+    "workbench.statusBar.visible": true,
+    "workbench.iconTheme": "vscode-great-icons",
+    "files.autoSave": "afterDelay",
+    "go.useLanguageServer": true,
+    "go.alternateTools": {
+        "go-langserver": "bingo"
+    },
+    "go.toolsEnvVars": {
+        "GO111MODULE": "on"
+    },
+    "go.languageServerExperimentalFeatures": {
+        "autoComplete": true,
+        "documentSymbols": true,
+        "findReferences": true,
+        "format": true,
+        "goToDefinition": true,
+        "goToTypeDefinition": true,
+        "hover": true,
+        "signatureHelp": true,
+        "rename": true,
+        "workspaceSymbols": true
+    },
+    "go.lintTool": "golangci-lint",
+    "go.lintFlags": [
+        "--fast",
+        "-E", "goimports",
+        "-E", "gocritic",
+        "-E", "gocyclo",
+        "-E", "gosec",
+        "-E", "maligned",
+        "-E", "scopelint",
+        "-E", "interfacer",
+        "-E", "goconst",
+        "-E", "unconvert",
+        "-E", "unparam",
+        "-E", "prealloc",
+        "-E", "varcheck"
+    ],
+    "go.formatTool": "goimports",
+    "editor.minimap.enabled": false,
+    "breadcrumbs.enabled": false,
+    "git.autofetch": true,
+    "workbench.startupEditor": "newUntitledFile",
+    "explorer.confirmDelete": false,
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "window.zoomLevel": 0,
+    "explorer.confirmDragAndDrop": false
+}
